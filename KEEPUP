@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# KEEP UP!
+# Version 0.1 Beta
+
+echo
+echo "KEEP UP! is successfully running."
+echo "Please DO NOT close this terminal console."
+
+read
+rm /tmp/KEEPUP-daemon*
+
+echo "KEEP UP! daemon has been stopped. This is not good!"
+echo
+
+#end

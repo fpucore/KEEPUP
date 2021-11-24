@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# KEEP UP!
+# Version 0.1 Beta
+
+#exec
+
+echo
+cp ~/KEEPUP/KEEPUP-daemon /tmp/KEEPUP-daemon_MASTER
+echo "MASTER" >> /tmp/KEEPUP-daemon_MASTER
+
+cp ~/KEEPUP/KEEPUP-daemon /tmp/KEEPUP-daemon_SLAVE
+echo "SLAVE" >> /tmp/KEEPUP-daemon_SLAVE
+
+
+clear
+cat /tmp/KEEPUP-daemon_MASTER
+echo
+cat /tmp/KEEPUP-daemon_SLAVE
+echo
+
+~/KEEPUP/KEEPUP
+#end
